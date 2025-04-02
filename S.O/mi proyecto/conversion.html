@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBS</title> 
+    <link rel="stylesheet" href="conversion.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html"><img src="logo.png" alt="Logo" class="logo"></a></li>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#almacenamiento">Almacenamiento</a></li>
+            <li><a href="#reseñas">Reseñas</a></li>
+            <li><a href="#quienes-somos">Quienes somos</a></li>
+            <li><a href="#contactanos">Contactanos</a></li> 
+            <li><a href="#convertir">Convertir</a></li> 
+            <li><a href="login.html"><img src="login.png" alt="Usuario" class="user-icon"></a></li>
+        </ul>
+    </nav>
+
+    <div class="contenedor">
+        <div class="ventana izquierda">
+            <h3>Entrada</h3>
+            <textarea placeholder="Ingrese su texto aquí..."></textarea>
+        </div>
+        <button class="convertir-btn">Convertir</button>
+        
+        <!-- Botón de subir archivo -->
+        <div class="subir-archivo">
+            <input type="file" id="file-input" class="file-input" accept="audio/*">
+            <label for="file-input" class="subir-btn">Subir archivo</label>
+        </div>
+        
+        <div class="ventana derecha">
+            <h3>Salida</h3>
+            <textarea readonly placeholder="Resultado..."></textarea>
+        </div>
+    </div>
+    
+    <!-- Barra de reproductor de voz -->
+    <div class="reproductor">
+        <audio id="audio-player" controls>
+            <source id="audio-source" src="" type="audio/mp3">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    </div>
+    
+    
+</body>
+</html>
